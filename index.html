@@ -1,0 +1,55 @@
+<!-- lien pour l'hebergement sur github: Tionebl https://tionebl.github.io/ -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+    <link rel="icon" href="imgfilm\icocine.png"> <!-- petit logo en haut  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="onLoadPage()">
+    <div class="head">
+
+        <div class="API_1">
+            <div id="fullsceenbtn"></div>
+            <button id="btnFullscreen" type="button" onclick="Fullscreen()">Fullscreen</button>
+        </div>
+        <button id="clear" type="button" onclick="clearLocalStorage()">clear</button>
+        <div class="contentarea">
+            <h1>Prend toi en photo après le visionnage de ton film!</h1>
+            <div class="camera">
+              <video id="video">Video stream not available.</video>
+              <button id="startbutton">Take photo</button>
+            </div>
+            <canvas id="canvas"> </canvas>
+            <div class="output">
+              <img id="photo"/>
+            </div>
+          </div>
+          
+    </div>
+    <div class="films">
+        <div id="filmsId"></div>
+    </div>
+    <div class="MenuDeroulant">
+        <div class="menuFilm">
+            <p>Laisse nous te conseiller un film!</p>
+            <label class="label" for="num">    Choisis le genre que tu souhaites voir aujourd'hui:  </label>
+            <select id="selectFilm">
+                <option value="Dystopique" selected="selected">Film Dystopique</option>
+                <option value="Horreur">Film d'horreur</option>
+                <option value="Gangster">Film de gangster</option>
+                <option value="FR">Film français</option>
+                <option value="Drame">Drame</option>
+                <option value="animation">Film d'animation</option>
+            </select>
+            <button id="buttonFilm" type="button" onclick="addFilm()">C'est parti!</button>
+            
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

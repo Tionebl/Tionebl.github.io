@@ -1,0 +1,196 @@
+body
+{
+    margin: 0; 
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    background-image: url("./imgfilm/bg.jpg") ;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#filmsId
+{
+    display: flex;
+    max-width: 700px;
+}
+
+.menuFilm
+{
+    margin: 10px 0 10px 0;
+}
+.divBtn
+{
+    margin: 10px 0 10px 40px;
+}
+
+.label
+{
+    color: white;
+    font-size: 20px;
+}
+
+.films
+{
+    border-radius: 50px;
+    padding: 30px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.231);
+}
+
+.image
+{
+    align-self: center;
+    height: auto;
+    max-width: 120px;
+    max-height: 250px;
+}
+
+.Card
+{
+    background-color: rgba(255, 255, 255, 0.443);
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    align-content: flex-end;
+    /* justify-content: center; */
+    padding: 5%;
+    max-width: 150px;
+    max-height: 400px;
+    height: 400px;
+    transition: 0.3s;
+}
+
+.Card:hover
+{
+    background-color: rgba(255, 255, 255, 0.443);
+    width: 200px;
+    height: 400px;
+    transform: scale(1.1);
+    transition: 0.4;
+}
+
+.cardParameters
+{
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+#btnFullscreen
+{
+    border-radius: 10px 10px 10px 10px;
+    height: 30px;
+}
+
+button:hover
+{
+    background-color: green;
+}
+
+.API_1
+{
+    color: white;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.MenuDeroulant
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menuFilm
+{
+    align-self: center;
+}
+
+.result
+{
+    width: 200px;
+}
+
+#video {
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px black;
+    width: 200px;
+    height: 150px;
+  }
+  
+#photo {
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px black;
+    width: 200px;
+    height: 150px;
+}
+  
+#canvas {
+    display: none;
+}
+  
+.camera {
+    width: 270px;
+    display: inline-block;
+}
+  
+.output {
+    width: 340px;
+    display: inline-block;
+    vertical-align: top;
+}
+  
+#startbutton {
+    display: block;
+    position: relative;
+    margin-left: 55px;
+    margin-right: auto;
+    bottom: 32px;
+    background-color: rgba(0, 150, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    color: rgba(255, 255, 255, 1);
+  }
+  
+.contentarea {
+    font-size: 16px;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    width: 760px;
+}
+
+h1{
+    color: rgba(255, 255, 255, 0.835);
+}
+
+h2
+{
+ font-size: 20px;
+}
+p{
+    color:rgba(255, 255, 255, 0.835);
+    font-size: 30px;
+    
+}
+
+#binId
+{
+    width: 50px;
+    
+}
+
+#binId:hover
+{
+    transform: scale(1.1);
+    transition: 0.4;
+}
