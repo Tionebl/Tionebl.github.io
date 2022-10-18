@@ -141,7 +141,7 @@ function addFilm(storageFilmName)
     newDivFilm.appendChild(del);
     block.appendChild(newDivFilm);
 
-    data.push(filmName, genre, indexFilm);
+    data.push(filmName, genre, indexFilm); // ajout des donnés au local storage
     localStorage.setItem("key"+ key, JSON.stringify(data))
     key++
 
