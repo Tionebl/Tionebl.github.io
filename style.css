@@ -4,7 +4,7 @@ body
     height: 100%;
     width: 100%;
     background-color: black;
-    background-image: url("./imgfilm/bgg.jpg") ;
+    background-image: url("./imgfilm/bgg.jpg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
